@@ -1,0 +1,22 @@
+{
+  "name": "hmac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "get_hmac": "nodemon --exec babel-node src/get_hmac.js",
+    "validate_hmac": "nodemon --exec babel-node src/validate_hmac.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.6",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
