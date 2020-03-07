@@ -1,7 +1,7 @@
 import { createHmac, timingSafeEqual } from "crypto";
 
 const sharedSecret = 'I\'m a very hard random string';
-const hmac = '<get the hmac generated with the getHmac method>';
+const hmac = process.env.npm_config_hmac;
 
 function validateHmac(hmac, body) {
 	const message = JSON.stringify(body);
